@@ -1,2 +1,2 @@
 # DS-C
-Basic Data Structures using C
+Basic Data Structures using C.
