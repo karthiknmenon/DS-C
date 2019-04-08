@@ -30,16 +30,18 @@ void sort(int a[], int n)
 	int i,j,min,temp;
 	for(i=0;i<n;i++)
 	{
+		int min,pos;
 		min=a[i];
-		for(j=i+1;j<n;j++)
+		for(j=0;j<n;j++)
 		{
-			if(a[j]<min)
+			if(a[j] < min)
 			{
-				temp=a[i];
-				a[i]=a[j];
-				a[j]=temp;
+				pos=j;
 			}
 		}
+		temp=a[pos];
+		a[pos]=a[i];
+		a[i]=temp;
 	}
 	printf("\n Array after sort is: ");
 }
